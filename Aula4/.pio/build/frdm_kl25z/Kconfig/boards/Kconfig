@@ -1,0 +1,2 @@
+# Load Zephyr board Kconfig descriptions.
+osource "C:/Users/felip/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z/Kconfig"

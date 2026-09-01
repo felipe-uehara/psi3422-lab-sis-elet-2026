@@ -1,0 +1,695 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "zephyr/kernel/libkernel.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_dependencies",
+			"add_compile_options",
+			"target_link_libraries",
+			"set_target_properties",
+			"target_include_directories",
+			"target_sources",
+			"target_sources_ifdef"
+		],
+		"files" : 
+		[
+			"C:/Users/felip/.platformio/packages/framework-zephyr/kernel/CMakeLists.txt",
+			"C:/Users/felip/.platformio/packages/framework-zephyr/CMakeLists.txt",
+			"C:/Users/felip/.platformio/packages/framework-zephyr/cmake/modules/extensions.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 138,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 981,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 223,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 219,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 214,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 151,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 2019,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 152,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 2019,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 161,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 211,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wshadow"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Os"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr/autoconf.h"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-common"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mcpu=cortex-m0plus"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mthumb"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mabi=aapcs"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-mfp16-format=ieee"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "--sysroot=C:\\Users\\felip\\.platformio\\packages\\toolchain-gccarmnoneeabi@1.80201.181220/arm-none-eabi"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-imacros"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "C:/Users/felip/.platformio/packages/framework-zephyr/include/zephyr/toolchain/zephyr_stdint.h"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wformat"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-format-zero-length"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-pointer-sign"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wexpansion-to-defined"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-but-set-variable"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Werror=implicit-int"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-pic"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-pie"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-asynchronous-unwind-tables"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-reorder-functions"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fno-defer-pop"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmacro-prefix-map=C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/zephyr=CMAKE_SOURCE_DIR"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fmacro-prefix-map=C:/Users/felip/.platformio/packages/framework-zephyr=ZEPHYR_BASE"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-std=c99"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-nostdinc"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "CPU_MKL25Z128VLK4"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "KERNEL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "K_HEAP_MEM_POOL_SIZE=0"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "NDEBUG"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__LINUX_ERRNO_EXTENSIONS__"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__PROGRAM_START"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "__ZEPHYR_SUPERVISOR__"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__ZEPHYR__=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/arch/arm/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/zephyr/include/generated/zephyr"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/zephyr/include/generated"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/soc/nxp/kinetis"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/soc/nxp/kinetis/kl2x/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/soc/nxp/kinetis/common"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/cmsis/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/cmsis_6/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/modules/cmsis_6/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk/devices/MKL25Z4"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk/devices/MKL25Z4/drivers"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/common"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk/devices/MKL25Z4/."
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/lpsci"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/nxp/mcux/mcux-sdk-ng/drivers/port"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/lib/libc/common/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/modules/picolibc/picolibc/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "driver_validation_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "zephyr_generated_headers::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "device_api_ld_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "syscall_list_h_target::@d36e55b69c1b90fb26b2"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "kobj_types_h_target::@d36e55b69c1b90fb26b2"
+		}
+	],
+	"id" : "kernel::@84e783bf488a9f887759",
+	"name" : "kernel",
+	"nameOnDisk" : "libkernel.a",
+	"paths" : 
+	{
+		"build" : "zephyr/kernel",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/main_weak.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/banner.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/busy_wait.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/errno.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/fatal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/kheap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/mem_slab.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/float.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/version.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/idle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/mailbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/msg_q.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/mutex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/sem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/stack.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/system_work_q.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/work.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/condvar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/thread.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/sched.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/pipe.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/timeslicing.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/xip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/timeout.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 12,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/atomic_c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 13,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/mempool.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 14,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/felip/.platformio/packages/framework-zephyr/kernel/dynamic_disabled.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

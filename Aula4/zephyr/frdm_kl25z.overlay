@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        encoder = &meu_encoder;
+    };
+
+    botoes {
+        compatible = "gpio-keys";
+        meu_encoder: meu_encoder {
+            gpios = <&gpioa 1 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};

@@ -1,0 +1,431 @@
+The target system is: Generic - 4.2.0 - arm
+The host system is: Windows - 10.0.26200 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is GNU, found in "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/3.21.3/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is GNU, found in "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/3.21.3/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+arm-none-eabi-gcc.exe (GNU MCU Eclipse ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) [gcc-8-branch revision 267074]
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_4070c && [1/2] Building C object CMakeFiles/cmTC_4070c.dir/src.c.obj
+[2/2] Linking C executable cmTC_4070c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wall_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_dc5b7 && [1/2] Building C object CMakeFiles/cmTC_dc5b7.dir/src.c.obj
+[2/2] Linking C executable cmTC_dc5b7
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wformat__Wformat_security_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_97717 && [1/2] Building C object CMakeFiles/cmTC_97717.dir/src.c.obj
+[2/2] Linking C executable cmTC_97717
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wformat__Wformat_zero_length_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_bbf46 && [1/2] Building C object CMakeFiles/cmTC_bbf46.dir/src.c.obj
+[2/2] Linking C executable cmTC_bbf46
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wdouble_promotion_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_3c27b && [1/2] Building C object CMakeFiles/cmTC_3c27b.dir/src.c.obj
+[2/2] Linking C executable cmTC_3c27b
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpointer_sign_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_b75c8 && [1/2] Building C object CMakeFiles/cmTC_b75c8.dir/src.c.obj
+[2/2] Linking C executable cmTC_b75c8
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpointer_arith_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_49f23 && [1/2] Building C object CMakeFiles/cmTC_49f23.dir/src.c.obj
+[2/2] Linking C executable cmTC_49f23
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wexpansion_to_defined_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_b3e71 && [1/2] Building C object CMakeFiles/cmTC_b3e71.dir/src.c.obj
+[2/2] Linking C executable cmTC_b3e71
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wlogical_op_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_ed952 && [1/2] Building C object CMakeFiles/cmTC_ed952.dir/src.c.obj
+[2/2] Linking C executable cmTC_ed952
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wmissing_field_initializers_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_e1494 && [1/2] Building C object CMakeFiles/cmTC_e1494.dir/src.c.obj
+[2/2] Linking C executable cmTC_e1494
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wpacked_bitfield_compat_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_e74d5 && [1/2] Building C object CMakeFiles/cmTC_e74d5.dir/src.c.obj
+[2/2] Linking C executable cmTC_e74d5
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wvla_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_b0187 && [1/2] Building C object CMakeFiles/cmTC_b0187.dir/src.c.obj
+[2/2] Linking C executable cmTC_b0187
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Wunused_but_set_variable_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_2d518 && [1/2] Building C object CMakeFiles/cmTC_2d518.dir/src.c.obj
+[2/2] Linking C executable cmTC_2d518
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_Werror_implicit_int_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_332a8 && [1/2] Building C object CMakeFiles/cmTC_332a8.dir/src.c.obj
+[2/2] Linking C executable cmTC_332a8
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_printf_return_value_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_43d00 && [1/2] Building C object CMakeFiles/cmTC_43d00.dir/src.c.obj
+[2/2] Linking C executable cmTC_43d00
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fsanitize_undefined_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_13988 && [1/2] Building C object CMakeFiles/cmTC_13988.dir/src.c.obj
+[2/2] Linking C executable cmTC_13988
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fsanitize_undefined_trap_on_error_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_9e156 && [1/2] Building C object CMakeFiles/cmTC_9e156.dir/src.c.obj
+[2/2] Linking C executable cmTC_9e156
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_freestanding_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_941b1 && [1/2] Building C object CMakeFiles/cmTC_941b1.dir/src.c.obj
+[2/2] Linking C executable cmTC_941b1
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_ffreestanding_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_2248d && [1/2] Building C object CMakeFiles/cmTC_2248d.dir/src.c.obj
+[2/2] Linking C executable cmTC_2248d
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_gdwarf_4_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_114ba && [1/2] Building C object CMakeFiles/cmTC_114ba.dir/src.c.obj
+[2/2] Linking C executable cmTC_114ba
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fdiagnostics_color_always_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_25256 && [1/2] Building C object CMakeFiles/cmTC_25256.dir/src.c.obj
+[2/2] Linking C executable cmTC_25256
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___gc_sections succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_87565 && [1/2] Building C object CMakeFiles/cmTC_87565.dir/src.c.obj
+[2/2] Linking C executable cmTC_87565
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___build_id_none succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_99716 && [1/2] Building C object CMakeFiles/cmTC_99716.dir/src.c.obj
+[2/2] Linking C executable cmTC_99716
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__nostdlib succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_1f356 && [1/2] Building C object CMakeFiles/cmTC_1f356.dir/src.c.obj
+[2/2] Linking C executable cmTC_1f356
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__static succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_115c5 && [1/2] Building C object CMakeFiles/cmTC_115c5.dir/src.c.obj
+[2/2] Linking C executable cmTC_115c5
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl__X succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_65e80 && [1/2] Building C object CMakeFiles/cmTC_65e80.dir/src.c.obj
+[2/2] Linking C executable cmTC_65e80
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl__N succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_17048 && [1/2] Building C object CMakeFiles/cmTC_17048.dir/src.c.obj
+[2/2] Linking C executable cmTC_17048
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___orphan_handling_warn succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_690df && [1/2] Building C object CMakeFiles/cmTC_690df.dir/src.c.obj
+[2/2] Linking C executable cmTC_690df
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___orphan_handling_error succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_36920 && [1/2] Building C object CMakeFiles/cmTC_36920.dir/src.c.obj
+[2/2] Linking C executable cmTC_36920
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___print_memory_usage succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_adeb8 && [1/2] Building C object CMakeFiles/cmTC_adeb8.dir/src.c.obj
+[2/2] Linking C executable cmTC_adeb8
+Memory region         Used Size  Region Size  %age Used
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__fsanitize_undefined succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_67f25 && [1/2] Building C object CMakeFiles/cmTC_67f25.dir/src.c.obj
+[2/2] Linking C executable cmTC_67f25
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__fsanitize_undefined_trap_on_error succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_08002 && [1/2] Building C object CMakeFiles/cmTC_08002.dir/src.c.obj
+[2/2] Linking C executable cmTC_08002
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___no_relax succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_ecab4 && [1/2] Building C object CMakeFiles/cmTC_ecab4.dir/src.c.obj
+[2/2] Linking C executable cmTC_ecab4
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___sort_common_descending succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_7db02 && [1/2] Building C object CMakeFiles/cmTC_7db02.dir/src.c.obj
+[2/2] Linking C executable cmTC_7db02
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__Wl___sort_section_alignment succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_0782d && [1/2] Building C object CMakeFiles/cmTC_0782d.dir/src.c.obj
+[2/2] Linking C executable cmTC_0782d
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__pg succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_d8a8c && [1/2] Building C object CMakeFiles/cmTC_d8a8c.dir/src.c.obj
+[2/2] Linking C executable cmTC_d8a8c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd__mcpu_cortex_m0plus__mthumb__mabi_aapcs__mfp16_format_ieee__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_fd65c && [1/2] Building C object CMakeFiles/cmTC_fd65c.dir/src.c.obj
+[2/2] Linking C executable cmTC_fd65c
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_asynchronous_unwind_tables_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_9d660 && [1/2] Building C object CMakeFiles/cmTC_9d660.dir/src.c.obj
+[2/2] Linking C executable cmTC_9d660
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_reorder_functions_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_887cc && [1/2] Building C object CMakeFiles/cmTC_887cc.dir/src.c.obj
+[2/2] Linking C executable cmTC_887cc
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fno_defer_pop_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_44413 && [1/2] Building C object CMakeFiles/cmTC_44413.dir/src.c.obj
+[2/2] Linking C executable cmTC_44413
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map_C__Users_felip_Documents_Escola_Politecnica_da_USP_psi3422_lab_sis_elet_2026_Aula4_zephyr_CMAKE_SOURCE_DIR_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_519df && [1/2] Building C object CMakeFiles/cmTC_519df.dir/src.c.obj
+[2/2] Linking C executable cmTC_519df
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fmacro_prefix_map_C__Users_felip__platformio_packages_framework_zephyr_ZEPHYR_BASE_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_86700 && [1/2] Building C object CMakeFiles/cmTC_86700.dir/src.c.obj
+[2/2] Linking C executable cmTC_86700
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_ffunction_sections_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_8c877 && [1/2] Building C object CMakeFiles/cmTC_8c877.dir/src.c.obj
+[2/2] Linking C executable cmTC_8c877
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check_fdata_sections_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd succeeded with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_49998 && [1/2] Building C object CMakeFiles/cmTC_49998.dir/src.c.obj
+[2/2] Linking C executable cmTC_49998
+
+
+Source file was:
+int main(void) { return 0; }

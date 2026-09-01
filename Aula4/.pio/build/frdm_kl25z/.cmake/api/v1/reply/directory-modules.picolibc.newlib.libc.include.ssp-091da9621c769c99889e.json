@@ -1,0 +1,57 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"picolibc_headers"
+		],
+		"files" : 
+		[
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/cmake/picolibc.cmake",
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/ssp",
+			"paths" : 
+			[
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/ssp.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdio.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/stdlib.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/string.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/strings.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/unistd.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp/wchar.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "modules/picolibc/newlib/libc/include/ssp",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/include/ssp"
+	}
+}
