@@ -1,0 +1,43 @@
+Change Component Designator: OldDesignator=P* NewDesignator=arduino
+Added Component: Designator=Ultrassonico(HDR FEMALE 1x4)
+Add component (AddParameter): Name = "Accessory Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Headers & Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Pin (Female)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Angle"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "Straight Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "40 Position"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1 Row"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.60, 5=0.32 (BRL)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Headers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Accessories"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Breakaway"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Netarduino_9 Pin=arduino-9
+Added Pin To Net: NetName=Netarduino_9 Pin=Ultrassonico-4
+Added Net: Name=Netarduino_9
+Added Pin To Net: NetName=Netarduino_11 Pin=arduino-11
+Added Pin To Net: NetName=Netarduino_11 Pin=Ultrassonico-1
+Added Net: Name=Netarduino_11
+Added Pin To Net: NetName=Netarduino_26 Pin=arduino-26
+Added Pin To Net: NetName=Netarduino_26 Pin=Ultrassonico-2
+Added Net: Name=Netarduino_26
+Added Pin To Net: NetName=Netarduino_28 Pin=arduino-28
+Added Pin To Net: NetName=Netarduino_28 Pin=Ultrassonico-3
+Added Net: Name=Netarduino_28
+Added Member To Class: ClassName=Esquematico Member=Component Ultrassonico Header Female 1x4

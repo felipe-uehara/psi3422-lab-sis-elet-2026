@@ -1,0 +1,114 @@
+Added Component: Designator=NRF1(HDR FEMALE 1x4)
+Add component (AddParameter): Name = "Accessory Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Headers & Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Pin (Female)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Angle"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "Straight Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "40 Position"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1 Row"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.60, 5=0.32 (BRL)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Headers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Accessories"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Breakaway"; VariantName = "[No Variations]"
+Added Component: Designator=NRF2(HDR FEMALE 1x4)
+Add component (AddParameter): Name = "Accessory Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Headers & Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Pin (Female)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Angle"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "Straight Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "40 Position"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1 Row"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.60, 5=0.32 (BRL)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Headers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Accessories"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Breakaway"; VariantName = "[No Variations]"
+Add component: Footprint Not Found Freedom KL25Z Headerarray
+Added Component: Designator=PonteH(HDR FEMALE 1x4)
+Add component (AddParameter): Name = "Accessory Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Brand"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Headers & Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Pin (Female)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Cromax"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Angle"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Style"; Value = "Straight Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "40 Position"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1 Row"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "2 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.60, 5=0.32 (BRL)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Headers"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Accessories"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Breakaway"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=NRF1-1
+Added Pin To Net: NetName=CE Pin=NRF1-2
+Added Pin To Net: NetName=SCK Pin=NRF1-3
+Added Pin To Net: NetName=MISO Pin=NRF1-4
+Added Pin To Net: NetName=VccEncoder Pin=NRF2-1
+Added Pin To Net: NetName=CS Pin=NRF2-2
+Added Pin To Net: NetName=MOSI Pin=NRF2-3
+Added Pin To Net: NetName=IRQ Pin=NRF2-4
+Add Pin To Net: Unknown Pin: Pin P*-3
+Add Pin To Net: Unknown Pin: Pin P*-40
+Add Pin To Net: Unknown Pin: Pin P*-41
+Add Pin To Net: Unknown Pin: Pin P*-42
+Add Pin To Net: Unknown Pin: Pin P*-43
+Add Pin To Net: Unknown Pin: Pin P*-44
+Add Pin To Net: Unknown Pin: Pin P*-45
+Add Pin To Net: Unknown Pin: Pin P*-47
+Add Pin To Net: Unknown Pin: Pin P*-48
+Add Pin To Net: Unknown Pin: Pin P*-55
+Added Pin To Net: NetName=12 Pin=PonteH-1
+Added Pin To Net: NetName=13 Pin=PonteH-2
+Added Pin To Net: NetName=16 Pin=PonteH-3
+Added Pin To Net: NetName=17 Pin=PonteH-4
+Added Member To Class: ClassName=Esquematico Member=Component NRF1 Header Female 1x4
+Added Member To Class: ClassName=Esquematico Member=Component NRF2 Header Female 1x4
+Add Class Member: Failed to add class member : Component P* KL25Z Shield*
+Added Member To Class: ClassName=Esquematico Member=Component PonteH Header Female 1x4

@@ -1,0 +1,12 @@
+Added Component: Designator=P*(Freedom KL25Z Headerarray)
+Added Pin To Net: NetName=VccEncoder Pin=P*-7
+Added Pin To Net: NetName=MISO Pin=P*-40
+Added Pin To Net: NetName=17 Pin=P*-41
+Added Pin To Net: NetName=MOSI Pin=P*-42
+Added Pin To Net: NetName=16 Pin=P*-43
+Added Pin To Net: NetName=CS Pin=P*-44
+Added Pin To Net: NetName=13 Pin=P*-45
+Added Pin To Net: NetName=12 Pin=P*-47
+Added Pin To Net: NetName=IRQ Pin=P*-48
+Added Pin To Net: NetName=SCK Pin=P*-55
+Added Member To Class: ClassName=Esquematico Member=Component P* KL25Z Shield*
