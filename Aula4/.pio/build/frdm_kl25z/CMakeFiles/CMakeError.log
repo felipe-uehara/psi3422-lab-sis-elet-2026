@@ -1,0 +1,62 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+
+
+Performing C SOURCE FILE Test check_mstack_protector_guard_global_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd failed with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_00090 && [1/2] Building C object CMakeFiles/cmTC_00090.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_00090.dir/src.c.obj 
+C:\Users\felip\.platformio\packages\toolchain-gccarmnoneeabi@1.80201.181220\bin\arm-none-eabi-gcc.exe -Dcheck_mstack_protector_guard_global_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd  -nostartfiles -nostdlib -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include" -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd   -mstack-protector-guard=global -o CMakeFiles/cmTC_00090.dir/src.c.obj -c C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/src.c
+arm-none-eabi-gcc.exe: error: unrecognized command line option '-mstack-protector-guard=global'; did you mean '-fstack-protector-all'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test check__param_min_pagesize_0_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd failed with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_b3b7b && [1/2] Building C object CMakeFiles/cmTC_b3b7b.dir/src.c.obj
+FAILED: CMakeFiles/cmTC_b3b7b.dir/src.c.obj 
+C:\Users\felip\.platformio\packages\toolchain-gccarmnoneeabi@1.80201.181220\bin\arm-none-eabi-gcc.exe -Dcheck__param_min_pagesize_0_C__nostartfiles__nostdlib__isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include___isystem__c__users_felip__platformio_packages_toolchain_gccarmnoneeabi_1_80201_181220_bin____lib_gcc_arm_none_eabi_8_2_1_include_fixed___Wl___unresolved_symbols_ignore_in_object_files__Wl___entry_0__fuse_ld_bfd  -nostartfiles -nostdlib -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include" -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd   --param=min-pagesize=0 -o CMakeFiles/cmTC_b3b7b.dir/src.c.obj -c C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/src.c
+cc1.exe: error: invalid --param name 'min-pagesize'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file xtensa/config/core-isa.h exists failed with the following output:
+Change Dir: C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_300dc && [1/2] Building C object CMakeFiles/cmTC_300dc.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_300dc.dir/CheckIncludeFile.c.obj 
+C:\Users\felip\.platformio\packages\toolchain-gccarmnoneeabi@1.80201.181220\bin\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include" -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_300dc.dir/CheckIncludeFile.c.obj -c C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/Aula4/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
+ #include <xtensa/config/core-isa.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+

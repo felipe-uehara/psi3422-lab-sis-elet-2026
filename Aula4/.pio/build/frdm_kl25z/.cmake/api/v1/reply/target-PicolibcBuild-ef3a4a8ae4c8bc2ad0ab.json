@@ -1,0 +1,61 @@
+{
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/zephyr/zephyr.cmake",
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 2
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "c::@5d5c3a829783c593ed76"
+		}
+	],
+	"id" : "PicolibcBuild::@5d5c3a829783c593ed76",
+	"name" : "PicolibcBuild",
+	"paths" : 
+	{
+		"build" : "modules/picolibc",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

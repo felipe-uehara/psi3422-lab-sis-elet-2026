@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "zephyr/soc/soc/mkl25z4/kl2x",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/soc/nxp/kinetis/kl2x"
+	}
+}
