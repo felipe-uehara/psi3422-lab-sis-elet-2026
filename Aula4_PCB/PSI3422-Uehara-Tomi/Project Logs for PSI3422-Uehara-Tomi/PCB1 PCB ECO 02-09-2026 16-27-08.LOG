@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Netarduino_58 Pin=Ultrassonico-2
+Removed Pin From Net: NetName=Netarduino_60 Pin=Ultrassonico-3
+Added Pin To Net: NetName=Netarduino_60 Pin=Ultrassonico-2
+Added Pin To Net: NetName=Netarduino_58 Pin=Ultrassonico-3

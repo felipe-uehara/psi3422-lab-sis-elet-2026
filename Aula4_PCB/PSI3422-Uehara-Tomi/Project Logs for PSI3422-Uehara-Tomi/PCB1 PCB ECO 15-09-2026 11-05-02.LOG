@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=Arduino NewDesignator=KL
+Add Pin To Net: Unknown Pin: Pin KL-3
+Add Pin To Net: Unknown Pin: Pin KL-7
+Add Pin To Net: Unknown Pin: Pin KL-11
+Add Pin To Net: Unknown Pin: Pin KL-13
+Add Pin To Net: Unknown Pin: Pin KL-40
+Add Pin To Net: Unknown Pin: Pin KL-42
+Add Pin To Net: Unknown Pin: Pin KL-44
+Add Pin To Net: Unknown Pin: Pin KL-46
+Add Pin To Net: Unknown Pin: Pin KL-48
+Add Pin To Net: Unknown Pin: Pin KL-54
+Add Pin To Net: Unknown Pin: Pin KL-56
+Add Pin To Net: Unknown Pin: Pin KL-59
+Added Pin To Net: NetName=NetKL_9 Pin=Ultrassonico-4
+Added Net: Name=NetKL_9
+Added Pin To Net: NetName=NetKL_58 Pin=Ultrassonico-3
+Added Net: Name=NetKL_58
+Added Pin To Net: NetName=NetKL_60 Pin=Ultrassonico-2
+Added Net: Name=NetKL_60

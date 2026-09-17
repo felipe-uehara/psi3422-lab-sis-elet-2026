@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=IN1 Pin=PonteH-1
+Added Pin To Net: NetName=IN1 Pin=KL-PTE20
+Added Net: Name=IN1
+Added Pin To Net: NetName=IN2 Pin=PonteH-2
+Added Pin To Net: NetName=IN2 Pin=KL-PTE21
+Added Net: Name=IN2
+Added Pin To Net: NetName=IN3 Pin=PonteH-3
+Added Pin To Net: NetName=IN3 Pin=KL-PTE22
+Added Net: Name=IN3
+Added Pin To Net: NetName=IN4 Pin=PonteH-4
+Added Pin To Net: NetName=IN4 Pin=KL-PTE23
+Added Net: Name=IN4

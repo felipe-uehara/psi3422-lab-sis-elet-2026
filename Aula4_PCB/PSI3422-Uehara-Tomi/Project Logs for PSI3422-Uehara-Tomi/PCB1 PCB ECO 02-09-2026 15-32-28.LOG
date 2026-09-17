@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=Netarduino_42 Pin=arduino-42
+Added Pin To Net: NetName=Netarduino_42 Pin=PonteH-4
+Added Net: Name=Netarduino_42
+Added Pin To Net: NetName=Netarduino_44 Pin=arduino-44
+Added Pin To Net: NetName=Netarduino_44 Pin=PonteH-3
+Added Net: Name=Netarduino_44
+Added Pin To Net: NetName=Netarduino_46 Pin=arduino-46
+Added Pin To Net: NetName=Netarduino_46 Pin=PonteH-2
+Added Net: Name=Netarduino_46

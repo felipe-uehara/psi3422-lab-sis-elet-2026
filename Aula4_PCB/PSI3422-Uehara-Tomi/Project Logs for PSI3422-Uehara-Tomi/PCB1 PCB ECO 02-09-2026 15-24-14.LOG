@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=MISO Pin=arduino-40
+Removed Pin From Net: NetName=17 Pin=arduino-41
+Removed Pin From Net: NetName=MOSI Pin=arduino-42
+Removed Pin From Net: NetName=16 Pin=arduino-43
+Removed Pin From Net: NetName=CS Pin=arduino-44
+Removed Pin From Net: NetName=13 Pin=arduino-45
+Removed Pin From Net: NetName=12 Pin=arduino-47
+Removed Pin From Net: NetName=IRQ Pin=arduino-48
+Removed Pin From Net: NetName=SCK Pin=arduino-55

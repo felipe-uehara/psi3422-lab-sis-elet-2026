@@ -1,0 +1,10 @@
+Added Component: Designator=KL(Freedom KL25Z Headerarray)
+Added Pin To Net: NetName=GND Pin=KL-GND
+Added Pin To Net: NetName=GND Pin=KL-GND
+Added Pin To Net: NetName=GND Pin=KL-GND
+Added Pin To Net: NetName=VccEncoder Pin=KL-P3V3
+Added Pin To Net: NetName=VccEncoder Pin=KL-P3V3
+Added Pin To Net: NetName=NetKL_9 Pin=KL-P5V_USB
+Added Pin To Net: NetName=NetKL_58 Pin=KL-PTA12
+Added Pin To Net: NetName=NetKL_60 Pin=KL-PTD4
+Added Member To Class: ClassName=Esquematico Member=Component KL KL25Z Shield*

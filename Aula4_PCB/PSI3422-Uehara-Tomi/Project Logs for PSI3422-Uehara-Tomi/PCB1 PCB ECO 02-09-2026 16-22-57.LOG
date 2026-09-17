@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=Encoder2 Pin=arduino-60
+Removed Pin From Net: NetName=Encoder1 Pin=arduino-62
+Added Pin To Net: NetName=Encoder2 Pin=arduino-54
+Added Pin To Net: NetName=Encoder1 Pin=arduino-56

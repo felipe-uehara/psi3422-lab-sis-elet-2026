@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=Encoder1 Pin=Encoder1-1
+Added Net: Name=Encoder1
+Added Pin To Net: NetName=Encoder2 Pin=arduino-60
+Added Pin To Net: NetName=Encoder2 Pin=Encoder2-1
+Added Net: Name=Encoder2

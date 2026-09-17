@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=MISO Pin=arduino-40
+Added Pin To Net: NetName=MOSI Pin=arduino-42
+Added Pin To Net: NetName=CS Pin=arduino-44
+Added Pin To Net: NetName=CE Pin=arduino-46
+Added Pin To Net: NetName=IRQ Pin=arduino-48
+Added Pin To Net: NetName=SCK Pin=arduino-55

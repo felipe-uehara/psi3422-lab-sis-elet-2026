@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=Netarduino_58 Pin=arduino-58
+Added Pin To Net: NetName=Netarduino_58 Pin=Ultrassonico-2
+Added Net: Name=Netarduino_58
+Added Pin To Net: NetName=Netarduino_60 Pin=arduino-60
+Added Pin To Net: NetName=Netarduino_60 Pin=Ultrassonico-3
+Added Net: Name=Netarduino_60

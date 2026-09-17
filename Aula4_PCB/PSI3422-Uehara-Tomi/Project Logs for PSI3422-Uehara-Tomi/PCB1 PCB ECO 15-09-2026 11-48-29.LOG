@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=Esquematico Member=KL
+Added Component: Designator=P*(Freedom KL25Z Headerarray)
+Added Pin To Net: NetName=GND Pin=P*-GND
+Added Pin To Net: NetName=GND Pin=P*-GND
+Added Pin To Net: NetName=GND Pin=P*-GND
+Added Pin To Net: NetName=NetP*_60 Pin=Ultrassonico-2
+Added Net: Name=NetP*_60
+Added Member To Class: ClassName=Esquematico Member=Component P* KL25Z Shield*

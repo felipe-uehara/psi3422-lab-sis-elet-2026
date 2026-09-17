@@ -1,0 +1,17 @@
+Added Component: Designator=arduino(Freedom KL25Z Headerarray)
+Add Pin To Net: Unknown Pin: Pin arduino-3
+Add Pin To Net: Unknown Pin: Pin arduino-7
+Add Pin To Net: Unknown Pin: Pin arduino-9
+Add Pin To Net: Unknown Pin: Pin arduino-11
+Add Pin To Net: Unknown Pin: Pin arduino-13
+Add Pin To Net: Unknown Pin: Pin arduino-40
+Add Pin To Net: Unknown Pin: Pin arduino-42
+Add Pin To Net: Unknown Pin: Pin arduino-44
+Add Pin To Net: Unknown Pin: Pin arduino-46
+Add Pin To Net: Unknown Pin: Pin arduino-48
+Add Pin To Net: Unknown Pin: Pin arduino-54
+Add Pin To Net: Unknown Pin: Pin arduino-55
+Add Pin To Net: Unknown Pin: Pin arduino-56
+Add Pin To Net: Unknown Pin: Pin arduino-58
+Add Pin To Net: Unknown Pin: Pin arduino-60
+Added Member To Class: ClassName=Esquematico Member=Component arduino KL25Z Shield*

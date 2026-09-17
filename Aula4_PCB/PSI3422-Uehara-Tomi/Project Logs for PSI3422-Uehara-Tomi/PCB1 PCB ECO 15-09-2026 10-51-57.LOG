@@ -1,0 +1,20 @@
+Added Component: Designator=P*(Freedom KL25Z Headerarray)
+Add Pin To Net: Unknown Pin: Pin P*-3
+Add Pin To Net: Unknown Pin: Pin P*-7
+Add Pin To Net: Unknown Pin: Pin P*-11
+Add Pin To Net: Unknown Pin: Pin P*-13
+Add Pin To Net: Unknown Pin: Pin P*-40
+Add Pin To Net: Unknown Pin: Pin P*-42
+Add Pin To Net: Unknown Pin: Pin P*-44
+Add Pin To Net: Unknown Pin: Pin P*-46
+Add Pin To Net: Unknown Pin: Pin P*-48
+Add Pin To Net: Unknown Pin: Pin P*-54
+Add Pin To Net: Unknown Pin: Pin P*-56
+Add Pin To Net: Unknown Pin: Pin P*-59
+Added Pin To Net: NetName=NetP*_9 Pin=Ultrassonico-4
+Added Net: Name=NetP*_9
+Added Pin To Net: NetName=NetP*_58 Pin=Ultrassonico-3
+Added Net: Name=NetP*_58
+Added Pin To Net: NetName=NetP*_60 Pin=Ultrassonico-2
+Added Net: Name=NetP*_60
+Added Member To Class: ClassName=Esquematico Member=Component P* KL25Z Shield*

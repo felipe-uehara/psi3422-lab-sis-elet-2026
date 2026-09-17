@@ -1,0 +1,16 @@
+Added Pin To Net: NetName=VccEncoder Pin=KL-P3V3
+Added Pin To Net: NetName=VccEncoder Pin=KL-P3V3
+Added Pin To Net: NetName=Encoder1 Pin=KL-PTA4
+Added Pin To Net: NetName=Encoder2 Pin=KL-PTA5
+Added Pin To Net: NetName=IRQ Pin=KL-PTA13
+Added Pin To Net: NetName=SCK Pin=KL-PTC3
+Added Pin To Net: NetName=CS Pin=KL-PTD0
+Added Pin To Net: NetName=MOSI Pin=KL-PTD2
+Added Pin To Net: NetName=MISO Pin=KL-PTD3
+Added Pin To Net: NetName=CE Pin=KL-PTD5
+Added Pin To Net: NetName=NetKL_9 Pin=Ultrassonico-4
+Added Pin To Net: NetName=NetKL_9 Pin=KL-P5V_USB
+Added Net: Name=NetKL_9
+Added Pin To Net: NetName=NetKL_58 Pin=Ultrassonico-3
+Added Pin To Net: NetName=NetKL_58 Pin=KL-PTA12
+Added Net: Name=NetKL_58
