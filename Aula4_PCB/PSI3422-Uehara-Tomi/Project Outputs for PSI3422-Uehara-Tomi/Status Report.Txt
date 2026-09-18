@@ -1,0 +1,12 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [PSI3422-Uehara-Tomi.PrjPcb]
+   Generated File[PCB1.GBL]
+   Generated File[PCB1.EXTREP]
+   Generated File[PCB1.REP]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 10:20:51 On 18/09/2026
