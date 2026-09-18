@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=MISO Pin=KL-PTD1
+Removed Pin From Net: NetName=MISO Pin=NRF1-3
+Added Pin To Net: NetName=SCK Pin=NRF1-3
+Added Pin To Net: NetName=SCK Pin=KL-PTD1
+Added Net: Name=SCK
