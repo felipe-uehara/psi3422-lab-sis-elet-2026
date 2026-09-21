@@ -1,0 +1,33 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\nanostack\mbed-mesh-api\source\thread_tasklet.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\mbed-mesh-api\source\thread_tasklet.c \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event_timer.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_list.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/common_functions.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/net_interface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/platform/arm_hal_phy.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ip6string.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/nsdynmemLIB.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/nsdynmem_tracker.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/thread_management_if.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/net_interface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/net_polling_api.h \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\mbed-mesh-api\source\include/thread_tasklet.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/MBED-M~1/mbed-mesh-api/mesh_interface_types.h \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\mbed-mesh-api\source\include/mesh_system.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/nanostack-event-loop/eventOS_scheduler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/NANOST~1/ns_event_loop.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/MBED-T~1/include/MBED-T~1/ns_trace.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/MBED-T~1/include/mbed-trace/mbed_trace.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/mac_api.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/mlme.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/mac_common_defines.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/mac_mcps.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/sw_mac.h

@@ -1,0 +1,23 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\nfc\source\NFCNDEFCapable.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nfc\source\NFCNDEFCapable.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/include/nfc/NFCNDEFCapable.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/Span.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/include/nfc/NFCDefinitions.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/nfc_errors.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/ndef/ndef.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/nfc_common.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/nfc_errors.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/platform/nfc_debug.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_macros.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_reader.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_builder.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_stream.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_reader.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/acore/acore/ac_buffer_builder.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/nfc/LIBRAR~1/stack/ndef/ndef.h

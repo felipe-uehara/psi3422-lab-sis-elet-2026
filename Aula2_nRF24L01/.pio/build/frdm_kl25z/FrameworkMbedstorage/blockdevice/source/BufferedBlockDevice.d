@@ -1,0 +1,20 @@
+.pio\build\frdm_kl25z\FrameworkMbedstorage\blockdevice\source\BufferedBlockDevice.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\storage\blockdevice\source\BufferedBlockDevice.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/storage/BLOCKD~1/include/blockdevice/BufferedBlockDevice.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/storage/BLOCKD~1/include/blockdevice/BlockDevice.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_atomic.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/core_cm0plus.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_compiler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_gcc.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/system_MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis_nvic.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/internal/mbed_atomic_impl.h

@@ -1,0 +1,34 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\nanostack\coap-service\source\coap_service_api.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\coap-service\source\coap_service_api.c \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_list.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/ns_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/MBED-T~1/include/MBED-T~1/ns_trace.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/MBED-T~1/include/mbed-trace/mbed_trace.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/nsdynmemLIB.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/nsdynmem_tracker.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/MBED-C~1/mbed-coap/sn_coap_header.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/MBED-C~1/mbed-coap/sn_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/COAP-S~1/coap_service_api.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/ns_address.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_message_handler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_scheduler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event_timer.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~2/NANOST~1/eventOS_event.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/common_functions.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_connection_handler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_service_api_internal.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_message_handler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_security_handler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/mbedtls/include/mbedtls/version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/mbedtls/include/mbedtls/config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/mbedtls/platform/inc/platform_mbed.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/mbedtls/include/mbedtls/config-no-entropy.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/mbedtls/include/mbedtls/check_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/net_interface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/SAL-ST~1/NANOST~1/platform/arm_hal_phy.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NANOST~1/COAP-S~1/source/include/coap_service_api_internal.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/MBED-C~1/mbed-coap/sn_coap_protocol.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/MBED-C~1/mbed-coap/sn_coap_header.h

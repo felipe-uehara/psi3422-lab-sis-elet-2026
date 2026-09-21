@@ -1,0 +1,17 @@
+/ {
+    aliases {
+        encdir = &pta2;
+        trig = &ptd4;
+        pwmesq = &tpm0_ch1; /* Mapear para o canal PWM correto do TPM da KL25Z */
+    };
+};
+
+/* Configurar o Pino A2 como entrada genérica */
+&porta {
+    status = "okay";
+};
+
+/* Ativar o Timer/PWM Module 0 */
+&tpm0 {
+    status = "okay";
+};

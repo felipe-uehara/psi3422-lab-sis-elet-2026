@@ -1,0 +1,34 @@
+.pio\build\frdm_kl25z\FrameworkMbedfeatures\frameworks\utest\source\utest_case.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\features\frameworks\utest\source\utest_case.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_case.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_shim.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_scheduler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/hal/include/hal/ticker_api.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/objects.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/core_cm0plus.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_compiler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_gcc.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/system_MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis_nvic.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/PortNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/PeripheralNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/PinNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/gpio_object.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/SingletonPtr.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_atomic.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/internal/mbed_atomic_impl.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_default_handlers.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/features/FRAMEW~1/utest/utest/utest_print.h
