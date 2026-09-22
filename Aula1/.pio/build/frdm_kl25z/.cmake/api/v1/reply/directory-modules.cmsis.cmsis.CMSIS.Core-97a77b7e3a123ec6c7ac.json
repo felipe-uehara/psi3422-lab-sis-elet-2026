@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/cmsis/cmsis/CMSIS/Core",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/hal/cmsis/CMSIS/Core"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/openthread",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/modules/openthread"
+	}
+}

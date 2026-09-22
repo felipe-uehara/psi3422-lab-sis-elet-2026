@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/segger",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/modules/segger"
+	}
+}

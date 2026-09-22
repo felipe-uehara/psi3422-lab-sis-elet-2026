@@ -1,0 +1,38 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/../../../../arm-none-eabi/lib\libc.a(lib_a-exit.o): in function `exit':
+exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+collect2.exe: error: ld returned 1 exit status
+
+
+Determining if the include file xtensa/config/core-isa.h exists failed with the following output:
+Change Dir: C:/Users/felip/OneDrive/Desktop/Temp/psi3422-lab-sis-elet-2026/Aula1/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Users/felip/.platformio/packages/tool-ninja/ninja.exe cmTC_2a35d && [1/2] Building C object CMakeFiles/cmTC_2a35d.dir/CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_2a35d.dir/CheckIncludeFile.c.obj 
+C:\Users\felip\.platformio\packages\toolchain-gccarmnoneeabi\bin\arm-none-eabi-gcc.exe   -nostartfiles -nostdlib -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/include" -isystem "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed" -Wl,--unresolved-symbols=ignore-in-object-files -Wl,--entry=0 -fuse-ld=bfd -o CMakeFiles/cmTC_2a35d.dir/CheckIncludeFile.c.obj -c C:/Users/felip/OneDrive/Desktop/Temp/psi3422-lab-sis-elet-2026/Aula1/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+C:/Users/felip/OneDrive/Desktop/Temp/psi3422-lab-sis-elet-2026/Aula1/.pio/build/frdm_kl25z/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: xtensa/config/core-isa.h: No such file or directory
+ #include <xtensa/config/core-isa.h>
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+

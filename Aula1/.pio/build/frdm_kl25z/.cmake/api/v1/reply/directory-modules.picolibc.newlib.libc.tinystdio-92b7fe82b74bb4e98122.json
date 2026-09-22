@@ -1,0 +1,52 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"picolibc_headers"
+		],
+		"files" : 
+		[
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/cmake/picolibc.cmake",
+			"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/tinystdio/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 231,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/tinystdio/stdio.h",
+				"C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/tinystdio/stdio-bufio.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "modules/picolibc/newlib/libc/tinystdio",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/_pio/modules/lib/picolibc/newlib/libc/tinystdio"
+	}
+}
