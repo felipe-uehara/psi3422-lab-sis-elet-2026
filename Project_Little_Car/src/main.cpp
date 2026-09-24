@@ -10,7 +10,7 @@ MMA8451Q acc(PTE25, PTE24, MMA8451_I2C_ADDRESS);
 
 #define MOSI    PTD2    
 #define MISO    PTD3    
-#define SCK     PTD1    
+#define SCK     PTC5    
 #define CS      PTD0    
 #define CE      PTD5    
 #define IRQ     PTA13   
