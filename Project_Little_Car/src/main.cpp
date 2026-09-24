@@ -47,13 +47,13 @@ volatile float distancia_frontal_cm = 999.0;
 volatile int pulsos_esq = 0;
 volatile int pulsos_dir = 0;
 
-const float distMax = 20.0;
+const float distMax = 35.0;
 const float PULSOS_POR_VOLTA = 31.0; 
 const float DIAMETRO_RODA_CM = 8.45; 
 const float CIRCUNFERENCIA_RODA = 3.14159 * DIAMETRO_RODA_CM;
 
 const float baseSpeed = 0.8; //varia de 0.0 até 1.0
-const float Kp = 0.15f; 
+const float Kp = 0.20f; 
 
 /* --- 3. Função Auxiliar para os LEDs --- */
 void ajustar_cor_led(bool r, bool g, bool b) {
@@ -89,70 +89,76 @@ void avancar() {
     // 1. Lê a aceleração lateral. 
     float erro_lateral = acc.getAccY(); 
     
-    // 2. Ganho Proporcional (Kp) e correção
-    // 3. Aplica a correção diferencial (O fator 0.85 compensa a assimetria mecânica)
+    // 2. Aplica a correção diferencial
     float pwm_esq = (0.85f * baseSpeed) - erro_lateral*Kp; 
     float pwm_dir = baseSpeed + erro_lateral*Kp;
     
-    // 4. Saturação (Clamp) 
+    // 3. Saturação (Clamp) 
     if (pwm_esq > 1.0f) pwm_esq = 1.0f;
     if (pwm_esq < 0.0f) pwm_esq = 0.0f;
     if (pwm_dir > 1.0f) pwm_dir = 1.0f;
     if (pwm_dir < 0.0f) pwm_dir = 0.0f;
     
-    // 5. Atualiza a Ponte H
+    // 4. Atualiza a Ponte H
     motor_esq_in1.write(pwm_esq);
     motor_esq_in2.write(0.0f);
     motor_dir_in1.write(pwm_dir);
     motor_dir_in2.write(0.0f);
 }
 
-// Força um disparo do ultrassom e aguarda a resposta
-void checar_caminho() {
+// Força um disparo do ultrassom e aguarda a resposta (usado no ciclo de giro)
+void atualizar_ultrassom_bloqueante() {
     ultrassom_trig = 1;
     wait_us(10);
     ultrassom_trig = 0;
-    ThisThread::sleep_for(60ms); // Aguarda a interrupção atualizar a variavel
+    // Em vez de esperar um tempo fixo, espera ativamente que a leitura termine
+    // (A ISR isr_echo_descida atualizará distancia_frontal_cm)
+    ThisThread::sleep_for(50ms); 
 }
 
-// Função de giro baseada no tempo
+// Gira ativamente até encontrar um caminho livre
 // dir = 0 (Esquerda), dir = 1 (Direita)
-void virar_tempo(int tempo_ms, int dir) {
+void procurar_caminho_livre(int dir) {
+    float limite_seguro = distMax + 20.0f;
+    
+    // Inicia a rotação
     if (dir == 0) { // Esquerda
         motor_esq_in1.write(0.0f);
-        motor_esq_in2.write(0.4f * baseSpeed); // Ré
-        motor_dir_in1.write(0.4f * baseSpeed); // Frente
+        motor_esq_in2.write(0.5f * baseSpeed); // Ré
+        motor_dir_in1.write(0.5f * baseSpeed); // Frente
         motor_dir_in2.write(0.0f);
     } else { // Direita
-        motor_esq_in1.write(0.4f * baseSpeed); // Frente
+        motor_esq_in1.write(0.5f * baseSpeed); // Frente
         motor_esq_in2.write(0.0f);
         motor_dir_in1.write(0.0f);
-        motor_dir_in2.write(0.4f * baseSpeed); // Ré
+        motor_dir_in2.write(0.5f * baseSpeed); // Ré
+    }
+
+    // Mantém-se a girar enquanto o caminho estiver bloqueado
+    while (distancia_frontal_cm < limite_seguro) {
+        atualizar_ultrassom_bloqueante();
     }
     
-    ThisThread::sleep_for(std::chrono::milliseconds(tempo_ms));
+    // Encontrou um caminho livre!
     parar_motores();
 }
 
+
 /* --- 6. Loop Principal --- */
 int main() {
-    // Config do acelerômetro
     uint8_t id = acc.getWhoAmI();
     printf("Acelerometro OK! ID: 0x%02X\n", id); 
 
-    // Configuração do nRF24L01
     radio.powerUp();
     radio.setTransferSize(TRANSFER_SIZE); 
     radio.setReceiveMode();
     radio.enable();
 
-    // Configuração dos Encoders e Ultrassom
     encoder_esq.rise(&isr_conta_pulso_esq);
     encoder_dir.rise(&isr_conta_pulso_dir); 
     ultrassom_echo.rise(&isr_echo_subida);
     ultrassom_echo.fall(&isr_echo_descida);
 
-    // Configuração dos Motores (100 Hz)
     motor_esq_in1.period(0.01f);
     motor_esq_in2.period(0.01f);
     motor_dir_in1.period(0.01f);
@@ -161,26 +167,23 @@ int main() {
 
     printf("Robo Iniciado. Radio frequencia configurada.\n");
 
+    int direcao_fuga = 0; // 0 = Esquerda, 1 = Direita
+
     while (true) {
-        // 1. Disparar o sensor de Ultrassom (Atualiza distancia_frontal_cm via ISR)
+        // Disparar o sensor de Ultrassom no loop principal
         ultrassom_trig = 1;
         wait_us(10);
         ultrassom_trig = 0;
 
-        // 2. Atualizar Odometria, Tempo e Acelerômetro
         float dist_esq = (pulsos_esq / PULSOS_POR_VOLTA) * CIRCUNFERENCIA_RODA;
         float dist_dir = (pulsos_dir / PULSOS_POR_VOLTA) * CIRCUNFERENCIA_RODA;
         float dist_media = (dist_esq + dist_dir) / 2.0;
         float tempo_segundos = timer_percurso.read_ms() / 1000.0; 
 
-        // Ler Acelerômetro nativamente
         float eixo_x = acc.getAccX();
         float eixo_y = acc.getAccY();
         float eixo_z = acc.getAccZ();
 
-        printf("X: %.2f | Y: %.2f | Z: %.2f\n", eixo_x, eixo_y, eixo_z);
-
-        // 3. Checar Comunicação Wireless (nRF24L01+)
         if (radio.readable()) {
             char comando_recebido = 0;
             radio.read(NRF24L01P_PIPE_P0, &comando_recebido, 1);
@@ -188,7 +191,7 @@ int main() {
             switch (comando_recebido) {
                 case 'R': 
                     estado_atual = RUN;
-                    timer_percurso.start(); // Retoma a contagem 
+                    timer_percurso.start(); 
                     printf("Comando recebido: RUN\n");
                     break;
                 case 'S': 
@@ -209,58 +212,63 @@ int main() {
         // 4. Máquina de Estados Principal
         if (estado_atual == RUN) {
             
-            // Lógica de Desvio Sequencial (Baseada no Tempo)
+            // Lógica Reativa de Desvio
             if (distancia_frontal_cm < distMax) {
-                ajustar_cor_led(1, 1, 1); // Branco: Obstáculo
+                ajustar_cor_led(1, 1, 1); // Branco: Obstáculo detetado
                 parar_motores();
                 ThisThread::sleep_for(100ms); 
 
-                // 1. Vira ~90º para a esquerda (0) -> Ajuste os 800ms conforme a sua bateria
-                virar_tempo(3200, 0); 
-                ThisThread::sleep_for(100ms);
-                checar_caminho(); // Lê o ultrassom novamente
-
-                // 2. Se a esquerda estiver bloqueada, vira ~180º para a direita
-                if (distancia_frontal_cm < distMax) {
-                    ajustar_cor_led(1, 1, 0); // Amarelo: Tentando o outro lado
-                    virar_tempo(6300, 1); // 1 = Direita (O dobro do tempo dos 90º)
-                    ThisThread::sleep_for(100ms);
-                    checar_caminho();
-                    
-                    // 3. Se a direita também estiver bloqueada, vira mais ~90º à direita (meia-volta)
-                    if (distancia_frontal_cm < distMax) {
-                        ajustar_cor_led(1, 0, 0); // Vermelho: Beco sem saída, meia-volta
-                        virar_tempo(3200, 1); // 1 = Direita
-                        ThisThread::sleep_for(100ms);
-                    }
-                }
+                // Gira para a esquerda até encontrar um caminho livre
+                procurar_caminho_livre(0); 
+                ThisThread::sleep_for(100ms); // Estabiliza após parar
             } 
             else {
-                ajustar_cor_led(0, 1, 0); // Verde: Caminho livre
                 avancar();
+                ajustar_cor_led(0, 1, 0); // Verde: Caminho livre
             }
 
-            // Exemplo de uso do acelerômetro: Parar o robô se ele capotar (Eixo Z invertido) ou levantar muito
             if (eixo_z < 0.0f || eixo_x > 0.8f) {
                 parar_motores();
-                ajustar_cor_led(1, 0, 1); // Roxo: Alerta de inclinação/capotamento!
+                ajustar_cor_led(1, 0, 1); // Roxo: Alerta de inclinação
             }
             
-        } 
+        }
+
+        // 4. Máquina de Estados Principal
+        /*if(estado_atual == RUN) {
+            // Lógica Reativa de Desvio
+            if (distancia_frontal_cm < distMax) {
+                ajustar_cor_led(1, 1, 1); // Branco: Obstáculo detetado
+                parar_motores();
+                ThisThread::sleep_for(100ms); 
+
+                // Gira para a direção atual até encontrar caminho livre
+                procurar_caminho_livre(direcao_fuga); 
+                
+                // Inverte a direção para o PRÓXIMO obstáculo (Se era 0 vira 1, se era 1 vira 0)
+                direcao_fuga = !direcao_fuga;
+
+                ThisThread::sleep_for(100ms); // Estabiliza após parar
+            } 
+            else {
+                avancar();
+                ajustar_cor_led(0, 1, 0); // Verde: Caminho livre
+            }
+        }*/
+
         else if (estado_atual == STOP) {
             parar_motores();
             timer_percurso.stop(); 
-            ajustar_cor_led(0, 0, 1); // Azul: Parado
+            ajustar_cor_led(0, 0, 1); 
         } 
         else if (estado_atual == CLEAR) {
             pulsos_esq = 0; 
             pulsos_dir = 0;
             timer_percurso.reset(); 
-            estado_atual = STOP; // Volta para STOP após limpar
+            estado_atual = STOP; 
         } 
         else if (estado_atual == ENVIAR) {
             char buffer_dist[64];
-            // Agora enviamos a Distância, o Tempo em Segundos, e a inclinação em X
             int mensagem = sprintf(buffer_dist, "D:%.1fcm T:%.1fs X:%.1fg", dist_media, tempo_segundos, eixo_x);
             
             radio.setTransmitMode();
@@ -270,7 +278,7 @@ int main() {
             radio.setReceiveMode();
             radio.setTransferSize(1);
             
-            estado_atual = STOP; // Volta para STOP após transmitir
+            estado_atual = STOP; 
         }
 
         ThisThread::sleep_for(50ms); 
