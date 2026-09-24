@@ -1,0 +1,26 @@
+.pio\build\frdm_kl25z\FrameworkMbedplatform\source\mbed_stats.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\platform\source\mbed_stats.c \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_stats.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/hal/include/hal/ticker_api.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/objects.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/core_cm0plus.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_compiler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_gcc.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/system_MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis_nvic.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/PortNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/PeripheralNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/PinNames.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/gpio_object.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_power_mgmt.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h

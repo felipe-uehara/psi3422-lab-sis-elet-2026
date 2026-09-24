@@ -1,0 +1,19 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_interrupt.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_interrupt.c \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LIBRAR~1/NANOST~1/MBED-C~1/platform/arm_hal_interrupt.h \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\nanostack\nanostack-hal-mbed-cmsis-rtos\arm_hal_interrupt_private.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/rtos/include/rtos/internal/mbed_rtos_storage.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_storage.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_os.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_def.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/RTE/include/RTE_Components.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/mbed_rtx.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/mbed_cmsis_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Config/RTX_Config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h

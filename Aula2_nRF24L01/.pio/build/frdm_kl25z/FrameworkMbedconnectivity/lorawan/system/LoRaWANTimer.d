@@ -1,0 +1,32 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\lorawan\system\LoRaWANTimer.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\lorawan\system\LoRaWANTimer.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\lorawan\system\LoRaWANTimer.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/events/include/events/EventQueue.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/events/include/events/equeue.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/events/include/events/internal/equeue_platform.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/rtos/include/rtos/internal/mbed_rtos_storage.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_storage.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_os.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Include/rtx_def.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/RTE/include/RTE_Components.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/mbed_rtx.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/mbed_cmsis_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/RTX/Config/RTX_Config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/device/rtos/include/mbed_rtx_conf.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/Callback.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_new \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_functional \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_memory \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_utility \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_iterator \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/NonCopyable.h \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\lorawan\system\lorawan_data_structures.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/lorawan/include/lorawan/lorawan_types.h

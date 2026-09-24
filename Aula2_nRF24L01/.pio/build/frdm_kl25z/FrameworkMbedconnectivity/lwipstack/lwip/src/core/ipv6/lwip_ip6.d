@@ -1,0 +1,23 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\lwipstack\lwip\src\core\ipv6\lwip_ip6.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\lwipstack\lwip\src\core\ipv6\lwip_ip6.c \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip/src/include/lwip/opt.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/include/LWIPST~1/lwipopts.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/NETSOC~1/nsapi_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_retarget.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/RTOS2/Include/cmsis_os2.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip-sys/lwip_random.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip-sys/lwip_tcp_isn.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip/src/include/lwip/debug.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip/src/include/lwip/arch.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/LWIPST~1/lwip-sys/arch/cc.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/core_cm0plus.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_version.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_compiler.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/cmsis/CMSIS_5/CMSIS/TARGET~2/Include/cmsis_gcc.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/system_MKL25Z4.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/targets/TA1EB2~1/TARGET~1/TARGET~1/device/cmsis_nvic.h

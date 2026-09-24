@@ -1,0 +1,19 @@
+.pio\build\frdm_kl25z\FrameworkMbedstorage\blockdevice\source\SFDP.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\storage\blockdevice\source\SFDP.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_error.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_retarget.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/storage/BLOCKD~1/include/blockdevice/internal/SFDP.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/storage/BLOCKD~1/include/blockdevice/BlockDevice.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/Callback.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_new \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_functional \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_memory \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_utility \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_iterator \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/MBED-T~1/include/mbed-trace/mbed_trace.h

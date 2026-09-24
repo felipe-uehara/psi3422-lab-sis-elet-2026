@@ -1,0 +1,25 @@
+.pio\build\frdm_kl25z\FrameworkMbedconnectivity\netsocket\source\NetworkInterfaceDefaults.o: \
+ C:\Users\felip\.platformio\packages\framework-mbed\connectivity\netsocket\source\NetworkInterfaceDefaults.cpp \
+ .pio\build\frdm_kl25z/mbed_config.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/NetworkInterface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/nsapi_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_preprocessor.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/SocketAddress.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/nsapi_types.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/Callback.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_cstddef \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_new \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_assert.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/include/platform/mbed_toolchain.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_type_traits \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_functional \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_memory \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_utility \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/platform/CXXSUP~1/mstd_iterator \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/DNS.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/EthInterface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/WiFiInterface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/WiFiAccessPoint.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/CellularInterface.h \
+ C:\Users\felip\PLATFO~1\packages\FRAMEW~2/CONNEC~1/NETSOC~1/include/netsocket/MeshInterface.h
