@@ -47,8 +47,8 @@ volatile float distancia_frontal_cm = 999.0;
 volatile int pulsos_esq = 0;
 volatile int pulsos_dir = 0;
 
-const float distMax = 15.0;
-const float PULSOS_POR_VOLTA = 31.0; // Corrigido para as 31 listras
+const float distMax = 20.0;
+const float PULSOS_POR_VOLTA = 31.0; 
 const float DIAMETRO_RODA_CM = 8.45; 
 const float CIRCUNFERENCIA_RODA = 3.14159 * DIAMETRO_RODA_CM;
 
@@ -57,7 +57,7 @@ const float Kp = 0.15f;
 
 /* --- 3. Função Auxiliar para os LEDs --- */
 void ajustar_cor_led(bool r, bool g, bool b) {
-    led_vermelho = !r;
+    led_vermelho = !r;  
     led_verde = !g;
     led_azul = !b;
 }
@@ -86,51 +86,52 @@ void parar_motores() {
 }
 
 void avancar() {
-    /*motor_esq_in1.write(0.85 * baseSpeed);
-    motor_esq_in2.write(0.0f);
-    motor_dir_in1.write(baseSpeed);
-    motor_dir_in2.write(0.0f);*/
-
     // 1. Lê a aceleração lateral. 
-    // Assumindo que o eixo Y cruza o carrinho de uma roda à outra. Se for o X, troque aqui.
     float erro_lateral = acc.getAccY(); 
     
-    // 2. Ganho Proporcional (Kp) - Este é o parâmetro de "Tuning" do seu controle.
-    // Se o robô oscilar muito ("ziguezague"), diminua este valor. Se demorar a corrigir, aumente.
-    
-    // 3. Calcula a correção do PWM
-    
-    // 4. Aplica a correção diferencial (O fator 0.85 compensa a assimetria mecânica)
+    // 2. Ganho Proporcional (Kp) e correção
+    // 3. Aplica a correção diferencial (O fator 0.85 compensa a assimetria mecânica)
     float pwm_esq = (0.85f * baseSpeed) - erro_lateral*Kp; 
     float pwm_dir = baseSpeed + erro_lateral*Kp;
     
-    // 5. Saturação (Clamp) para garantir que o sinal PWM não saia dos limites do Mbed (0.0 a 1.0)
+    // 4. Saturação (Clamp) 
     if (pwm_esq > 1.0f) pwm_esq = 1.0f;
     if (pwm_esq < 0.0f) pwm_esq = 0.0f;
     if (pwm_dir > 1.0f) pwm_dir = 1.0f;
     if (pwm_dir < 0.0f) pwm_dir = 0.0f;
     
-    // 6. Atualiza a Ponte H
+    // 5. Atualiza a Ponte H
     motor_esq_in1.write(pwm_esq);
     motor_esq_in2.write(0.0f);
     motor_dir_in1.write(pwm_dir);
     motor_dir_in2.write(0.0f);
 }
 
-// Função de manobra não-bloqueante
-void rodar_sobre_eixo(int dir) {
-    if (dir == 1) { // Rodar para a direita
-        motor_esq_in1.write(0.8 * baseSpeed);
+// Força um disparo do ultrassom e aguarda a resposta
+void checar_caminho() {
+    ultrassom_trig = 1;
+    wait_us(10);
+    ultrassom_trig = 0;
+    ThisThread::sleep_for(60ms); // Aguarda a interrupção atualizar a variavel
+}
+
+// Função de giro baseada no tempo
+// dir = 0 (Esquerda), dir = 1 (Direita)
+void virar_tempo(int tempo_ms, int dir) {
+    if (dir == 0) { // Esquerda
+        motor_esq_in1.write(0.0f);
+        motor_esq_in2.write(0.4f * baseSpeed); // Ré
+        motor_dir_in1.write(0.4f * baseSpeed); // Frente
+        motor_dir_in2.write(0.0f);
+    } else { // Direita
+        motor_esq_in1.write(0.4f * baseSpeed); // Frente
         motor_esq_in2.write(0.0f);
         motor_dir_in1.write(0.0f);
-        motor_dir_in2.write(0.4 * baseSpeed);
-    } 
-    else if (dir == 0) { // Rodar para a esquerda
-        motor_dir_in1.write(0.8 * baseSpeed);
-        motor_dir_in2.write(0.0f);
-        motor_esq_in1.write(0.0f);
-        motor_esq_in2.write(0.4f * baseSpeed);
+        motor_dir_in2.write(0.4f * baseSpeed); // Ré
     }
+    
+    ThisThread::sleep_for(std::chrono::milliseconds(tempo_ms));
+    parar_motores();
 }
 
 /* --- 6. Loop Principal --- */
@@ -170,16 +171,14 @@ int main() {
         float dist_esq = (pulsos_esq / PULSOS_POR_VOLTA) * CIRCUNFERENCIA_RODA;
         float dist_dir = (pulsos_dir / PULSOS_POR_VOLTA) * CIRCUNFERENCIA_RODA;
         float dist_media = (dist_esq + dist_dir) / 2.0;
-        float tempo_segundos = timer_percurso.read_ms() / 1000.0; // Converte para segundos decimais
+        float tempo_segundos = timer_percurso.read_ms() / 1000.0; 
 
         // Ler Acelerômetro nativamente
-       float eixo_x = acc.getAccX();
+        float eixo_x = acc.getAccX();
         float eixo_y = acc.getAccY();
-     float eixo_z = acc.getAccZ();
+        float eixo_z = acc.getAccZ();
 
-    printf("X: %.2f | Y: %.2f | Z: %.2f\n", eixo_x, eixo_y, eixo_z);
-
-
+        printf("X: %.2f | Y: %.2f | Z: %.2f\n", eixo_x, eixo_y, eixo_z);
 
         // 3. Checar Comunicação Wireless (nRF24L01+)
         if (radio.readable()) {
@@ -206,15 +205,35 @@ int main() {
                     break;
             }
         }
-       //estado_atual=RUN;
-
+       
         // 4. Máquina de Estados Principal
         if (estado_atual == RUN) {
             
-            // Lógica de Desvio Básica
+            // Lógica de Desvio Sequencial (Baseada no Tempo)
             if (distancia_frontal_cm < distMax) {
                 ajustar_cor_led(1, 1, 1); // Branco: Obstáculo
-                rodar_sobre_eixo(0); // Gira para a esquerda até o caminho ficar livre
+                parar_motores();
+                ThisThread::sleep_for(100ms); 
+
+                // 1. Vira ~90º para a esquerda (0) -> Ajuste os 800ms conforme a sua bateria
+                virar_tempo(3200, 0); 
+                ThisThread::sleep_for(100ms);
+                checar_caminho(); // Lê o ultrassom novamente
+
+                // 2. Se a esquerda estiver bloqueada, vira ~180º para a direita
+                if (distancia_frontal_cm < distMax) {
+                    ajustar_cor_led(1, 1, 0); // Amarelo: Tentando o outro lado
+                    virar_tempo(6300, 1); // 1 = Direita (O dobro do tempo dos 90º)
+                    ThisThread::sleep_for(100ms);
+                    checar_caminho();
+                    
+                    // 3. Se a direita também estiver bloqueada, vira mais ~90º à direita (meia-volta)
+                    if (distancia_frontal_cm < distMax) {
+                        ajustar_cor_led(1, 0, 0); // Vermelho: Beco sem saída, meia-volta
+                        virar_tempo(3200, 1); // 1 = Direita
+                        ThisThread::sleep_for(100ms);
+                    }
+                }
             } 
             else {
                 ajustar_cor_led(0, 1, 0); // Verde: Caminho livre
