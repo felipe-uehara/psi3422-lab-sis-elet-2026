@@ -43,7 +43,7 @@ int main() {
             }
 
             // Filtra e transmite apenas se a tecla for R, S ou C (Ignora a tecla Enter e outras)
-            if (caractere_teclado == 'R' || caractere_teclado == 'S' || caractere_teclado == 'C') {
+            if (caractere_teclado == 'R' || caractere_teclado == 'S' || caractere_teclado == 'C' ||  caractere_teclado == 'D') {
                 
                 txData[0] = caractere_teclado;
                 
@@ -57,9 +57,15 @@ int main() {
         }
 
         // 2. RECEBE DADOS DO ROBÔ (Caso o robô envie alguma confirmação de volta)
+        // 2. RECEBE DADOS DO ROBÔ 
         if (radio.readable()) {
-            radio.read(NRF24L01P_PIPE_P0, rxData, TRANSFER_SIZE);
-            printf(">> [RESPOSTA DO ROBO]: %c\n", rxData[0]);
+            char rxData[1];
+            radio.read(NRF24L01P_PIPE_P0, rxData, 1);
+            
+            // Força a conversão matemática para inteiro puro
+            int distancia_cm = (int)rxData[0];
+            
+            printf(">> [RESPOSTA DO ROBO]: %d cm\n", distancia_cm);
         }
 
         ThisThread::sleep_for(10ms);

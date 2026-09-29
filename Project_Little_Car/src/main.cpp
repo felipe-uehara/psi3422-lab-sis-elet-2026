@@ -47,7 +47,7 @@ volatile float distancia_frontal_cm = 999.0;
 volatile int pulsos_esq = 0;
 volatile int pulsos_dir = 0;
 
-const float distMax = 35.0;
+const float distMax = 26.0;
 const float PULSOS_POR_VOLTA = 31.0; 
 const float DIAMETRO_RODA_CM = 8.45; 
 const float CIRCUNFERENCIA_RODA = 3.14159 * DIAMETRO_RODA_CM;
@@ -119,19 +119,19 @@ void atualizar_ultrassom_bloqueante() {
 // Gira ativamente até encontrar um caminho livre
 // dir = 0 (Esquerda), dir = 1 (Direita)
 void procurar_caminho_livre(int dir) {
-    float limite_seguro = distMax + 20.0f;
+    float limite_seguro = distMax + 45.0f;
     
     // Inicia a rotação
     if (dir == 0) { // Esquerda
         motor_esq_in1.write(0.0f);
-        motor_esq_in2.write(0.5f * baseSpeed); // Ré
-        motor_dir_in1.write(0.5f * baseSpeed); // Frente
+        motor_esq_in2.write(0.46f * baseSpeed); // Ré
+        motor_dir_in1.write(0.46f * baseSpeed); // Frente
         motor_dir_in2.write(0.0f);
     } else { // Direita
-        motor_esq_in1.write(0.5f * baseSpeed); // Frente
+        motor_esq_in1.write(0.46f * baseSpeed); // Frente
         motor_esq_in2.write(0.0f);
         motor_dir_in1.write(0.0f);
-        motor_dir_in2.write(0.5f * baseSpeed); // Ré
+        motor_dir_in2.write(0.46f * baseSpeed); // Ré
     }
 
     // Mantém-se a girar enquanto o caminho estiver bloqueado
@@ -268,15 +268,16 @@ int main() {
             estado_atual = STOP; 
         } 
         else if (estado_atual == ENVIAR) {
-            char buffer_dist[64];
-            int mensagem = sprintf(buffer_dist, "D:%.1fcm T:%.1fs X:%.1fg", dist_media, tempo_segundos, eixo_x);
+            // Converte a distância para inteiro (0 a 255)
+            int dist_inteira = (int)dist_dir;
+            if (dist_inteira > 255) dist_inteira = 255;
+            
+            char dado_enviar = (char)dist_inteira;
             
             radio.setTransmitMode();
-            radio.setTransferSize(mensagem);
-            radio.write(NRF24L01P_PIPE_P0, buffer_dist, mensagem);
-                    
+            // Envia o byte diretamente a partir do endereço da variável
+            radio.write(NRF24L01P_PIPE_P0, &dado_enviar, 1);
             radio.setReceiveMode();
-            radio.setTransferSize(1);
             
             estado_atual = STOP; 
         }
