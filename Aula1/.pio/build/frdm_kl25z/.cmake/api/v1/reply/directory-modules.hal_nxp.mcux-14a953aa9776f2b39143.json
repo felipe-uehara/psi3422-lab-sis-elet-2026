@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/hal_nxp/mcux",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/modules/hal_nxp/mcux"
+	}
+}

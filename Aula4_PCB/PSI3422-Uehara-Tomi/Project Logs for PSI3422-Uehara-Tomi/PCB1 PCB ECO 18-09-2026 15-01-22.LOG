@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=IRQ Pin=KL-PTA13
+Added Pin To Net: NetName=MISO Pin=KL-PTD1
+Added Pin To Net: NetName=MISO Pin=NRF1-3
+Added Rule: Name=Schematic Supply Nets

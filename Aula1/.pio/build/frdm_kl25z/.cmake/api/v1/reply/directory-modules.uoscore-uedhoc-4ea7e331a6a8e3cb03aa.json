@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "modules/uoscore-uedhoc",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/modules/uoscore-uedhoc"
+	}
+}

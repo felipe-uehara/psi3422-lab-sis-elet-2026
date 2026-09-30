@@ -1,0 +1,33 @@
+#include <zephyr/dt-bindings/pwm/pwm.h>
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+    aliases {
+        pwmesq = &motor_esq;
+        encdir = &encoder_direito;
+        trig = &ultrassom_trig;
+    };
+
+    motores {
+        compatible = "pwm-leds";
+        motor_esq: motor_esq {
+            /* tpm0 canal 1, período de 10ms (10000000 ns) */
+            pwms = <&tpm0 1 10000000 PWM_POLARITY_NORMAL>;
+        };
+    };
+
+    sensores {
+        compatible = "gpio-keys";
+        encoder_direito: enc_dir {
+            gpios = <&gpioa 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        };
+        ultrassom_trig: u_trig {
+            gpios = <&gpiod 4 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
+
+/* Habilita os periféricos no kernel */
+&tpm0 { status = "okay"; };
+&gpioa { status = "okay"; };
+&gpiod { status = "okay"; };
