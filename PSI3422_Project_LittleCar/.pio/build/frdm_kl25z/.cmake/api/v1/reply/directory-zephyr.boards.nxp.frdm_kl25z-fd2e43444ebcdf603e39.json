@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "zephyr/boards/nxp/frdm_kl25z",
+		"source" : "C:/Users/felip/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z"
+	}
+}

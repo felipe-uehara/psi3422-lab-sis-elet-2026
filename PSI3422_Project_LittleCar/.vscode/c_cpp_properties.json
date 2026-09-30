@@ -1,0 +1,70 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/include",
+                "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/src",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/include",
+                "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/.pio/build/frdm_kl25z/zephyr/include/generated",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/soc/arm/nxp_kinetis/kl2x",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/cmsis/CMSIS/Core/Include",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/nxp/mcux/devices/MKL25Z4",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/nxp/mcux/drivers/kinetis",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/include",
+                    "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/src",
+                    "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/include",
+                    "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/.pio/build/frdm_kl25z/zephyr/include/generated",
+                    "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/soc/arm/nxp_kinetis/kl2x",
+                    "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/cmsis/CMSIS/Core/Include",
+                    "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/nxp/mcux/devices/MKL25Z4",
+                    "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/_pio/modules/hal/nxp/mcux/drivers/kinetis",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60200",
+                "BUILD_VERSION=zephyr-v20701",
+                "BOARD_FLASH_SIZE=CONFIG_FLASH_SIZE*1024",
+                "CPU_MKL25Z128VLK4",
+                "KERNEL",
+                "NDEBUG",
+                "_FORTIFY_SOURCE=2",
+                "__PROGRAM_START",
+                "__ZEPHYR__=1",
+                ""
+            ],
+            "cStandard": "c99",
+            "forcedInclude": [
+                "C:/Users/felip/Documents/Escola_Politecnica_da_USP/psi3422-lab-sis-elet-2026/PSI3422_Project_LittleCar/.pio/build/frdm_kl25z/zephyr/include/generated/autoconf.h",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/include/toolchain/zephyr_stdint.h",
+                ""
+            ],
+            "compilerPath": "C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m0plus",
+                "-mthumb",
+                "-mabi=aapcs",
+                "-mfp16-format=ieee",
+                "-isystem",
+                "C:/Users/felip/.platformio/packages/framework-zephyr@2.20701.220422/lib/libc/minimal/include",
+                "-isystem",
+                "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include",
+                "-isystem",
+                "c:/users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/../lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

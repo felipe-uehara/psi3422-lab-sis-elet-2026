@@ -1,0 +1,409 @@
+/dts-v1/;
+
+/* node '/' defined in framework-zephyr\dts\common\skeleton.dtsi:9 */
+/ {
+	#address-cells = < 0x1 >;          /* in framework-zephyr\dts\common\skeleton.dtsi:10 */
+	#size-cells = < 0x1 >;             /* in framework-zephyr\dts\common\skeleton.dtsi:11 */
+	model = "NXP Freedom KL25Z board"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:10 */
+	compatible = "nxp,frdm-kl25z",
+	             "nxp,kl25z",
+	             "nxp,mkl25z4";        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:11 */
+
+	/* node '/chosen' defined in framework-zephyr\dts\common\skeleton.dtsi:12 */
+	chosen {
+		zephyr,flash-controller = &ftfa; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:13 */
+		zephyr,sram = &sram0;            /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:23 */
+		zephyr,flash = &flash0;          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:24 */
+		zephyr,console = &uart0;         /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:25 */
+		zephyr,shell-uart = &uart0;      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:26 */
+	};
+
+	/* node '/aliases' defined in framework-zephyr\dts\common\skeleton.dtsi:13 */
+	aliases {
+		led0 = &green_led;    /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:14 */
+		led1 = &blue_led;     /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:15 */
+		led2 = &red_led;      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:16 */
+		sw0 = &user_button_0; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:17 */
+		sw1 = &user_button_1; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:18 */
+		accel0 = &mma8451q;   /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:19 */
+	};
+
+	/* node '/soc' defined in framework-zephyr\dts\arm\armv6-m.dtsi:6 */
+	soc {
+		#address-cells = < 0x1 >;     /* in framework-zephyr\dts\arm\armv6-m.dtsi:7 */
+		#size-cells = < 0x1 >;        /* in framework-zephyr\dts\arm\armv6-m.dtsi:8 */
+		compatible = "simple-bus";    /* in framework-zephyr\dts\arm\armv6-m.dtsi:9 */
+		interrupt-parent = < &nvic >; /* in framework-zephyr\dts\arm\armv6-m.dtsi:10 */
+		ranges;                       /* in framework-zephyr\dts\arm\armv6-m.dtsi:11 */
+
+		/* node '/soc/interrupt-controller@e000e100' defined in framework-zephyr\dts\arm\armv6-m.dtsi:13 */
+		nvic: interrupt-controller@e000e100 {
+			#address-cells = < 0x1 >;            /* in framework-zephyr\dts\arm\armv6-m.dtsi:14 */
+			compatible = "arm,v6m-nvic";         /* in framework-zephyr\dts\arm\armv6-m.dtsi:15 */
+			reg = < 0xe000e100 0xc00 >;          /* in framework-zephyr\dts\arm\armv6-m.dtsi:16 */
+			interrupt-controller;                /* in framework-zephyr\dts\arm\armv6-m.dtsi:17 */
+			#interrupt-cells = < 0x2 >;          /* in framework-zephyr\dts\arm\armv6-m.dtsi:18 */
+			arm,num-irq-priority-bits = < 0x2 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:210 */
+			phandle = < 0x1 >;                   /* in framework-zephyr\dts\arm\armv6-m.dtsi:10 */
+		};
+
+		/* node '/soc/timer@e000e010' defined in framework-zephyr\dts\arm\armv6-m.dtsi:21 */
+		systick: timer@e000e010 {
+			compatible = "arm,armv6m-systick"; /* in framework-zephyr\dts\arm\armv6-m.dtsi:22 */
+			reg = < 0xe000e010 0x10 >;         /* in framework-zephyr\dts\arm\armv6-m.dtsi:23 */
+		};
+
+		/* node '/soc/flash-controller@40020000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:39 */
+		ftfa: flash-controller@40020000 {
+			compatible = "nxp,kinetis-ftfa"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:40 */
+			reg = < 0x40020000 0x14 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:41 */
+			interrupts = < 0x5 0x0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:42 */
+			status = "disabled";             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:43 */
+			#address-cells = < 0x1 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:45 */
+			#size-cells = < 0x1 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:46 */
+
+			/* node '/soc/flash-controller@40020000/flash@0' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:48 */
+			flash0: flash@0 {
+				compatible = "soc-nv-flash";  /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:49 */
+				reg = < 0x0 0x20000 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:50 */
+				erase-block-size = < 0x400 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:51 */
+				write-block-size = < 0x4 >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:52 */
+			};
+		};
+
+		/* node '/soc/clock-controller@40064000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:56 */
+		mcg: clock-controller@40064000 {
+			compatible = "nxp,kinetis-mcg"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:57 */
+			reg = < 0x40064000 0xd >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:58 */
+			#clock-cells = < 0x1 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:59 */
+			phandle = < 0x5 >;              /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:91 */
+		};
+
+		/* node '/soc/i2c@40066000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:62 */
+		i2c0: i2c@40066000 {
+			compatible = "nxp,kinetis-i2c";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:63 */
+			clock-frequency = < 0x186a0 >;    /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:64 */
+			#address-cells = < 0x1 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:65 */
+			#size-cells = < 0x0 >;            /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:66 */
+			reg = < 0x40066000 0x1000 >;      /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:67 */
+			interrupts = < 0x8 0x0 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:68 */
+			clocks = < &sim 0x2 0x1034 0x6 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:69 */
+			status = "okay";                  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:105 */
+			pinctrl-0 = < &i2c0_default >;    /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:106 */
+			pinctrl-names = "default";        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:107 */
+
+			/* node '/soc/i2c@40066000/mma8451q@1d' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:109 */
+			mma8451q: mma8451q@1d {
+				compatible = "nxp,fxos8700",
+				             "nxp,mma8451q";     /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:110 */
+				reg = < 0x1d >;                  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:111 */
+				int1-gpios = < &gpioa 0xe 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:112 */
+				int2-gpios = < &gpioa 0xf 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:113 */
+			};
+		};
+
+		/* node '/soc/i2c@40067000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:73 */
+		i2c1: i2c@40067000 {
+			compatible = "nxp,kinetis-i2c";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:74 */
+			clock-frequency = < 0x186a0 >;    /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:75 */
+			#address-cells = < 0x1 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:76 */
+			#size-cells = < 0x0 >;            /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:77 */
+			reg = < 0x40067000 0x1000 >;      /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:78 */
+			interrupts = < 0x9 0x0 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:79 */
+			clocks = < &sim 0x2 0x1034 0x7 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:80 */
+			status = "disabled";              /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:81 */
+		};
+
+		/* node '/soc/sim@40047000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:84 */
+		sim: sim@40047000 {
+			compatible = "nxp,kinetis-sim"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:85 */
+			reg = < 0x40047000 0x1060 >;    /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:86 */
+			#clock-cells = < 0x3 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:87 */
+			pllfll-select = < 0x1 >;        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:90 */
+			er32k-select = < 0x3 >;         /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:91 */
+			phandle = < 0x2 >;              /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:69 */
+
+			/* node '/soc/sim@40047000/core_clk' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:89 */
+			core_clk {
+				compatible = "fixed-factor-clock"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:90 */
+				clocks = < &mcg 0x1 >;             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:91 */
+				clock-div = < 0x2 >;               /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:92 */
+				#clock-cells = < 0x0 >;            /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:93 */
+			};
+
+			/* node '/soc/sim@40047000/flash_clk' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:96 */
+			flash_clk {
+				compatible = "fixed-factor-clock"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:97 */
+				clocks = < &mcg 0x1 >;             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:98 */
+				clock-div = < 0x2 >;               /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:99 */
+				#clock-cells = < 0x0 >;            /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:100 */
+			};
+		};
+
+		/* node '/soc/uart@4006a000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:104 */
+		uart0: uart@4006a000 {
+			compatible = "nxp,kinetis-lpsci"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:105 */
+			reg = < 0x4006a000 0xc >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:106 */
+			interrupts = < 0xc 0x0 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:107 */
+			clocks = < &sim 0x0 0x1034 0xa >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:108 */
+			status = "okay";                  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:118 */
+			current-speed = < 0x1c200 >;      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:119 */
+			pinctrl-0 = < &uart0_default >;   /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:120 */
+			pinctrl-names = "default";        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:121 */
+		};
+
+		/* node '/soc/adc@4003b000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:113 */
+		adc0: adc@4003b000 {
+			compatible = "nxp,kinetis-adc16"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:114 */
+			reg = < 0x4003b000 0x70 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:115 */
+			interrupts = < 0xf 0x0 >;         /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:116 */
+			#io-channel-cells = < 0x1 >;      /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:118 */
+			status = "okay";                  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:99 */
+			pinctrl-0 = < &adc0_default >;    /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:100 */
+			pinctrl-names = "default";        /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:101 */
+		};
+
+		/* node '/soc/pinmux@40049000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:121 */
+		porta: pinmux@40049000 {
+			compatible = "nxp,port-pinmux";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:122 */
+			reg = < 0x40049000 0xd0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:123 */
+			clocks = < &sim 0x2 0x1038 0x9 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:124 */
+			phandle = < 0x8 >;                /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:158 */
+		};
+
+		/* node '/soc/pinmux@4004a000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:127 */
+		portb: pinmux@4004a000 {
+			compatible = "nxp,port-pinmux";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:128 */
+			reg = < 0x4004a000 0xd0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:129 */
+			clocks = < &sim 0x2 0x1038 0xa >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:130 */
+			phandle = < 0x9 >;                /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:167 */
+		};
+
+		/* node '/soc/pinmux@4004b000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:133 */
+		portc: pinmux@4004b000 {
+			compatible = "nxp,port-pinmux";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:134 */
+			reg = < 0x4004b000 0xd0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:135 */
+			clocks = < &sim 0x2 0x1038 0xb >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:136 */
+			phandle = < 0xa >;                /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:176 */
+		};
+
+		/* node '/soc/pinmux@4004c000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:139 */
+		portd: pinmux@4004c000 {
+			compatible = "nxp,port-pinmux";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:140 */
+			reg = < 0x4004c000 0xd0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:141 */
+			clocks = < &sim 0x2 0x1038 0xc >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:142 */
+			phandle = < 0xb >;                /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:186 */
+		};
+
+		/* node '/soc/pinmux@4004d000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:145 */
+		porte: pinmux@4004d000 {
+			compatible = "nxp,port-pinmux";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:146 */
+			reg = < 0x4004d000 0xd0 >;        /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:147 */
+			clocks = < &sim 0x2 0x1038 0xd >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:148 */
+			phandle = < 0xc >;                /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:195 */
+		};
+
+		/* node '/soc/gpio@400ff000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:151 */
+		gpioa: gpio@400ff000 {
+			compatible = "nxp,kinetis-gpio"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:152 */
+			reg = < 0x400ff000 0x40 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:154 */
+			interrupts = < 0x1e 0x2 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:155 */
+			gpio-controller;                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:156 */
+			#gpio-cells = < 0x2 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:157 */
+			nxp,kinetis-port = < &porta >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:158 */
+			status = "okay";                 /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:125 */
+			phandle = < 0x4 >;               /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:112 */
+		};
+
+		/* node '/soc/gpio@400ff040' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:161 */
+		gpiob: gpio@400ff040 {
+			compatible = "nxp,kinetis-gpio"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:162 */
+			reg = < 0x400ff040 0x40 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:164 */
+			gpio-controller;                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:165 */
+			#gpio-cells = < 0x2 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:166 */
+			nxp,kinetis-port = < &portb >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:167 */
+			status = "okay";                 /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:129 */
+			phandle = < 0xd >;               /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:32 */
+		};
+
+		/* node '/soc/gpio@400ff080' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:170 */
+		gpioc: gpio@400ff080 {
+			compatible = "nxp,kinetis-gpio"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:171 */
+			status = "disabled";             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:172 */
+			reg = < 0x400ff080 0x40 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:173 */
+			gpio-controller;                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:174 */
+			#gpio-cells = < 0x2 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:175 */
+			nxp,kinetis-port = < &portc >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:176 */
+			phandle = < 0xf >;               /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:64 */
+		};
+
+		/* node '/soc/gpio@400ff0c0' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:179 */
+		gpiod: gpio@400ff0c0 {
+			compatible = "nxp,kinetis-gpio"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:180 */
+			reg = < 0x400ff0c0 0x40 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:182 */
+			interrupts = < 0x1f 0x2 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:183 */
+			gpio-controller;                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:184 */
+			#gpio-cells = < 0x2 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:185 */
+			nxp,kinetis-port = < &portd >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:186 */
+			status = "okay";                 /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:133 */
+			phandle = < 0xe >;               /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:40 */
+		};
+
+		/* node '/soc/gpio@400ff100' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:189 */
+		gpioe: gpio@400ff100 {
+			compatible = "nxp,kinetis-gpio"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:190 */
+			status = "disabled";             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:191 */
+			reg = < 0x400ff100 0x40 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:192 */
+			gpio-controller;                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:193 */
+			#gpio-cells = < 0x2 >;           /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:194 */
+			nxp,kinetis-port = < &porte >;   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:195 */
+			phandle = < 0x10 >;              /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:64 */
+		};
+
+		/* node '/soc/usbd@40072000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:198 */
+		usbotg: zephyr_udc0: usbd@40072000 {
+			reg = < 0x40072000 0x1000 >;     /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:200 */
+			interrupts = < 0x18 0x1 >;       /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:201 */
+			interrupt-names = "usb_otg";     /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:202 */
+			compatible = "nxp,kinetis-usbd"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:137 */
+			status = "okay";                 /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:138 */
+			num-bidir-endpoints = < 0x8 >;   /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:139 */
+		};
+	};
+
+	/* node '/cpus' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:16 */
+	cpus {
+		#address-cells = < 0x1 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:17 */
+		#size-cells = < 0x0 >;    /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:18 */
+
+		/* node '/cpus/cpu@0' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:20 */
+		cpu0: cpu@0 {
+			device_type = "cpu";             /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:21 */
+			compatible = "arm,cortex-m0+";   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:22 */
+			reg = < 0x0 >;                   /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:23 */
+			clock-frequency = < 0x2dc6c00 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:95 */
+		};
+	};
+
+	/* node '/memory@1FFFF000' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:27 */
+	sram0: memory@1FFFF000 {
+		compatible = "mmio-sram";    /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:28 */
+		reg = < 0x1ffff000 0x4000 >; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:29 */
+	};
+
+	/* node '/pinctrl' defined in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:33 */
+	pinctrl: pinctrl {
+		compatible = "nxp,port-pinctrl"; /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:34 */
+		status = "okay";                 /* in framework-zephyr\dts\arm\nxp\nxp_kl25z.dtsi:35 */
+
+		/* node '/pinctrl/adc0_default' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:13 */
+		adc0_default: adc0_default {
+			phandle = < 0x7 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:100 */
+
+			/* node '/pinctrl/adc0_default/group0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:14 */
+			group0 {
+				pinmux = < 0x10800000 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:15 */
+				drive-strength = "low";  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:16 */
+				slew-rate = "slow";      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:17 */
+			};
+		};
+
+		/* node '/pinctrl/i2c0_default' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:21 */
+		i2c0_default: i2c0_default {
+			phandle = < 0x3 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:106 */
+
+			/* node '/pinctrl/i2c0_default/group0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:22 */
+			group0 {
+				pinmux = < 0x46000500 >,
+				         < 0x46400500 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:23 */
+				drive-strength = "low";  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:25 */
+				slew-rate = "slow";      /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:26 */
+			};
+		};
+
+		/* node '/pinctrl/uart0_default' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:30 */
+		uart0_default: uart0_default {
+			phandle = < 0x6 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:120 */
+
+			/* node '/pinctrl/uart0_default/group0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:31 */
+			group0 {
+				pinmux = < 0x400200 >,
+				         < 0x800200 >;  /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:32 */
+				drive-strength = "low"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:34 */
+				slew-rate = "slow";     /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z-pinctrl.dtsi:35 */
+			};
+		};
+	};
+
+	/* node '/leds' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:29 */
+	leds {
+		compatible = "gpio-leds"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:30 */
+
+		/* node '/leds/led_0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:31 */
+		red_led: led_0 {
+			gpios = < &gpiob 0x12 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:32 */
+			label = "User LD1";          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:33 */
+		};
+
+		/* node '/leds/led_1' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:35 */
+		green_led: led_1 {
+			gpios = < &gpiob 0x13 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:36 */
+			label = "User LD2";          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:37 */
+		};
+
+		/* node '/leds/led_2' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:39 */
+		blue_led: led_2 {
+			gpios = < &gpiod 0x1 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:40 */
+			label = "User LD3";         /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:41 */
+		};
+	};
+
+	/* node '/gpio_keys' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:45 */
+	gpio_keys {
+		compatible = "gpio-keys"; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:46 */
+
+		/* node '/gpio_keys/button_0' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:47 */
+		user_button_0: button_0 {
+			label = "User SW0";          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:48 */
+			gpios = < &gpioa 0x10 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:49 */
+			zephyr,code = < 0xb >;       /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:50 */
+		};
+
+		/* node '/gpio_keys/button_1' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:52 */
+		user_button_1: button_1 {
+			label = "User SW1";          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:53 */
+			gpios = < &gpioa 0x11 0x1 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:54 */
+			zephyr,code = < 0x2 >;       /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:55 */
+		};
+	};
+
+	/* node '/connector' defined in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:59 */
+	arduino_header: connector {
+		compatible = "arduino-header-r3";          /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:60 */
+		#gpio-cells = < 0x2 >;                     /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:61 */
+		gpio-map-mask = < 0xffffffff 0xffffffc0 >; /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:62 */
+		gpio-map-pass-thru = < 0x0 0x3f >;         /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:63 */
+		gpio-map = < 0x0 0x0 &gpiob 0x0 0x0 >,
+		           < 0x1 0x0 &gpiob 0x1 0x0 >,
+		           < 0x2 0x0 &gpiob 0x2 0x0 >,
+		           < 0x3 0x0 &gpiob 0x3 0x0 >,
+		           < 0x4 0x0 &gpioc 0x2 0x0 >,
+		           < 0x5 0x0 &gpioc 0x1 0x0 >,
+		           < 0x6 0x0 &gpioa 0x1 0x0 >,
+		           < 0x7 0x0 &gpioa 0x2 0x0 >,
+		           < 0x8 0x0 &gpiod 0x4 0x0 >,
+		           < 0x9 0x0 &gpioa 0xc 0x0 >,
+		           < 0xa 0x0 &gpioa 0x4 0x0 >,
+		           < 0xb 0x0 &gpioa 0x5 0x0 >,
+		           < 0xc 0x0 &gpioc 0x8 0x0 >,
+		           < 0xd 0x0 &gpioc 0x9 0x0 >,
+		           < 0xe 0x0 &gpioa 0xd 0x0 >,
+		           < 0xf 0x0 &gpiod 0x5 0x0 >,
+		           < 0x10 0x0 &gpiod 0x0 0x0 >,
+		           < 0x11 0x0 &gpiod 0x2 0x0 >,
+		           < 0x12 0x0 &gpiod 0x3 0x0 >,
+		           < 0x13 0x0 &gpiod 0x1 0x0 >,
+		           < 0x14 0x0 &gpioe 0x0 0x0 >,
+		           < 0x15 0x0 &gpioe 0x1 0x0 >;    /* in framework-zephyr\boards\nxp\frdm_kl25z\frdm_kl25z.dts:64 */
+	};
+};

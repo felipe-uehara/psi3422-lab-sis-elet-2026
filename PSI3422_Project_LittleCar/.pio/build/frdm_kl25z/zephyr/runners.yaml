@@ -1,0 +1,32 @@
+# Available runners configured by board.cmake.
+runners:
+- linkserver
+- pyocd
+- jlink
+
+# Default flash runner if --runner is not given.
+flash-runner: linkserver
+
+# Default debug runner if --runner is not given.
+debug-runner: linkserver
+
+# Common runner configuration values.
+config:
+  board_dir: C:/Users/felip/.platformio/packages/framework-zephyr/boards/nxp/frdm_kl25z
+  # Build outputs:
+  elf_file: zephyr.elf
+  bin_file: zephyr.bin
+  # Host tools:
+  gdb: C:/Users/felip/.platformio/packages/toolchain-gccarmnoneeabi@1.80201.181220/bin/arm-none-eabi-gdb.exe
+
+# Runner specific arguments
+args:
+  linkserver:
+    - --dt-flash=y
+    - --device=MKL25Z128xxx4:FRDM-KL25Z
+  pyocd:
+    - --dt-flash=y
+    - --target=kl25z
+  jlink:
+    - --dt-flash=y
+    - --device=MKL25Z128xxx4
