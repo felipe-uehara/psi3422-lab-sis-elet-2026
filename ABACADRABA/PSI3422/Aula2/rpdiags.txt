@@ -1,0 +1,14 @@
+Raspberry Pi Diagnostics - version (unknown)
+Tue Nov 25 08:17:26 2025
+
+Test : SD Card Speed Test
+Run 1
+prepare-file;0;0;10144;19
+seq-write;0;0;10230;19
+rand-4k-write;0;0;2681;670
+rand-4k-read;6891;1722;0;0
+Sequential write speed 10230 KB/sec (target 10000) - PASS
+Random write speed 670 IOPS (target 500) - PASS
+Random read speed 1722 IOPS (target 1500) - PASS
+Test PASS
+
